@@ -24,8 +24,9 @@ This project presents how to create a Kubernetes deployment of the BookStoreAPI 
 
 4. Since we are pushing the docker images to a docker hub registry, make sure that you set your docker hub username/password with following commands executed in the terminal.
 
-export DOCKER_USERNAME= "provide username"
-export DOCKER_PASSWORD= "provide password"
+`export DOCKER_USERNAME= "provide username"`
+
+`export DOCKER_PASSWORD= "provide password"`
 
 
 ## Building bookstore project
