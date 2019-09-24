@@ -1,0 +1,28 @@
+[kubernetes]
+  [kubernetes.kubernetesDeployment]
+    enable = true
+    replicas = '2'
+    imagePullPolicy = 'Always'
+    baseImage = 'wso2/wso2micro-gw:3.0.1'
+    image = 'himasha91/bookstoreAPI:1.0.0'
+    buildImage = true
+    push = true
+    [kubernetes.kubernetesConfigMap]
+    enable = true
+    ballerinaConf = '/Users/himasha/Documents/APIDays/wso2am-micro-gw-macos-3.0.1/conf/micro-gw.conf'
+    #[[kubernetes.kubernetesConfigMap.configMaps]]
+    #    name = ''
+    #    mountPath = ''
+    #    readOnly = false
+    #    data = ['']
+  [kubernetes.kubernetesService]
+    enable = true
+    #name = 'bookstore_service'
+    #labels = ''
+    serviceType = 'NodePort'
+    #port = ''
+
+
+
+
+
